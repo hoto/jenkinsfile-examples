@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+
+  jenkins:
+    image: docker.io/jenkins/jenkins:2.141
+    ports:
+    - target: 8080
+      published: 8080
+    volumes:
+    - type: bind
+      source: ${PWD}/data/jenkins_home
+      target: /var/jenkins_home
+      read_only: false
+    tty: true
+
