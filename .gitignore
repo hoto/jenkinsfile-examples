@@ -3,5 +3,6 @@
 *.iml
 
 # Jenkins
-data/*
+data/
 !data/jenkins_home/config.xml
+!data/jobs/**/config.xml
