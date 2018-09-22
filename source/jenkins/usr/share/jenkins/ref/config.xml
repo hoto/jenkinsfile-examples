@@ -2,8 +2,7 @@
 <hudson>
   <disabledAdministrativeMonitors/>
   <version>2.141</version>
-  <installStateName>RESTART</installStateName>
-  <numExecutors>2</numExecutors>
+  <numExecutors>0</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
@@ -16,7 +15,7 @@
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
   <clouds/>
-  <quietPeriod>5</quietPeriod>
+  <quietPeriod>0</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
     <hudson.model.AllView>
@@ -30,9 +29,6 @@
   <primaryView>all</primaryView>
   <slaveAgentPort>50000</slaveAgentPort>
   <label></label>
-  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
-    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
-  </crumbIssuer>
   <nodeProperties/>
   <globalNodeProperties/>
 </hudson>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scriptApproval plugin="script-security@1.15">
+    <approvedScriptHashes>
+    </approvedScriptHashes>
+    <approvedSignatures>
+        <string>method io.fabric8.kubernetes.api.model.KubernetesResourceList getItems</string>
+        <string>method io.fabric8.kubernetes.client.dsl.KubernetesDSL nodes</string>
+        <string>method io.fabric8.kubernetes.client.dsl.Listable list</string>
+        <string>method groovy.json.JsonSlurper parse java.io.Reader</string>
+        <string>method groovy.json.JsonSlurperClassic parse java.io.Reader</string>
+        <string>method groovy.lang.GString plus java.lang.String</string>
+        <string>method groovy.lang.GroovyObject getProperty java.lang.String</string>
+        <string>method io.fabric8.kubernetes.client.Client isAdaptable java.lang.Class</string>
+        <string>method groovy.lang.GroovyObject invokeMethod java.lang.String java.lang.Object</string>
+        <string>method groovy.util.ConfigSlurper parse java.net.URL</string>
+        <string>method groovy.util.ConfigSlurper parse java.util.Properties</string>
+        <string>method groovy.util.XmlSlurper parse java.lang.String</string>
+        <string>method groovy.util.XmlSlurper parseText java.lang.String</string>
+        <string>method groovy.util.slurpersupport.GPathResult text</string>
+        <string>method groovy.xml.DOMBuilder parseText java.lang.String</string>
+        <string>method io.fabric8.kubernetes.client.Client getNamespace</string>
+        <string>method io.fabric8.kubernetes.client.KubernetesClient nodes</string>
+        <string>method io.fabric8.kubernetes.client.KubernetesClient services</string>
+        <string>method java.io.File toURL</string>
+        <string>method java.io.File newOutputStream</string>
+        <string>method java.io.File close</string>
+        <string>method java.io.File exists</string>
+        <string>method java.io.Flushable flush</string>
+        <string>method java.io.Writer write java.lang.String</string>
+        <string>method java.lang.AutoCloseable close</string>
+        <string>method java.lang.Object getClass</string>
+        <string>method java.lang.String isEmpty</string>
+        <string>method java.lang.String replaceAll java.lang.String java.lang.String</string>
+        <string>method java.lang.String substring int</string>
+        <string>method java.lang.Throwable printStackTrace</string>
+        <string>method java.net.HttpURLConnection disconnect</string>
+        <string>method java.net.HttpURLConnection setRequestMethod java.lang.String</string>
+        <string>method java.net.URL openConnection</string>
+        <string>method java.net.URL openStream</string>
+        <string>method java.net.URLConnection connect</string>
+        <string>method java.net.URLConnection getInputStream</string>
+        <string>method java.net.URLConnection getOutputStream</string>
+        <string>method java.net.URLConnection setDoInput boolean</string>
+        <string>method java.util.Properties load java.io.InputStream</string>
+        <string>method java.util.regex.Matcher group java.lang.String</string>
+        <string>method java.util.regex.Matcher matches</string>
+        <string>method java.net.URLConnection setDoOutput boolean</string>
+        <string>new io.fabric8.kubernetes.client.DefaultKubernetesClient</string>
+        <string>method java.net.URLConnection setRequestProperty java.lang.String java.lang.String</string>
+        <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string>
+        <string>method org.jenkinsci.plugins.workflow.job.WorkflowRun getChangeSets</string>
+        <string>method org.w3c.dom.Document getDocumentElement</string>
+        <string>method org.w3c.dom.Document getElementsByTagName java.lang.String</string>
+        <string>method org.w3c.dom.Element getElementsByTagName java.lang.String</string>
+        <string>method org.w3c.dom.Node getChildNodes</string>
+        <string>method org.w3c.dom.Node getNodeName</string>
+        <string>method org.w3c.dom.Node getTextContent</string>
+        <string>method org.w3c.dom.Node setTextContent java.lang.String</string>
+        <string>method org.w3c.dom.NodeList getLength</string>
+        <string>method org.w3c.dom.NodeList item int</string>
+        <string>method io.fabric8.kubernetes.client.dsl.Nameable withName java.lang.String</string>
+        <string>method io.fabric8.kubernetes.client.dsl.Gettable get</string>
+        <string>method se.bjurr.gitchangelog.api.GitChangelogApi withFromRepo java.lang.String</string>
+        <string>method se.bjurr.gitchangelog.api.GitChangelogApi withTemplateContent java.lang.String</string>
+        <string>new groovy.json.JsonSlurper</string>
+        <string>new groovy.json.JsonSlurperClassic</string>
+        <string>new groovy.util.ConfigSlurper</string>
+        <string>new groovy.util.XmlSlurper</string>
+        <string>new java.io.File java.lang.String</string>
+        <string>new java.io.FileInputStream java.io.File</string>
+        <string>new java.io.InputStreamReader java.io.InputStream</string>
+        <string>new java.io.InputStreamReader java.io.InputStream java.lang.String</string>
+        <string>new java.io.OutputStreamWriter java.io.OutputStream</string>
+        <string>new java.lang.String java.lang.String</string>
+        <string>new java.util.Properties</string>
+        <string>staticField groovy.io.FileType FILES</string>
+        <string>staticMethod groovy.grape.Grape grab java.util.Map java.util.Map[]</string>
+        <string>staticMethod groovy.xml.DOMBuilder newInstance</string>
+        <string>staticMethod groovy.xml.XmlUtil serialize org.w3c.dom.Element</string>
+        <string>staticMethod java.lang.System getenv</string>
+        <string>staticMethod java.util.UUID randomUUID</string>
+        <string>staticMethod jenkins.model.Jenkins getInstance</string>string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods get java.util.Map java.lang.Object
+            java.lang.Object
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods each java.lang.Object
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachDirRecurse java.io.File
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachFile java.io.File
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachFileMatch java.io.File
+            java.lang.Object groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachFileRecurse java.io.File
+            groovy.io.FileType groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachFileRecurse java.io.File
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods withInputStream java.io.File
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter bitwiseNegate java.lang.Object</string>
+        <string>staticMethod io.fabric8.kubernetes.client.Adapters get java.lang.Class</string>
+        <string>staticMethod io.fabric8.utils.Strings isNotBlank java.lang.String</string>
+        <string>staticMethod io.fabric8.kubernetes.api.KubernetesHelper getServiceURL
+            io.fabric8.kubernetes.client.KubernetesClient java.lang.String java.lang.String java.lang.String boolean
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachLine java.io.File
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachLine java.lang.String
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods eachWithIndex java.lang.Object
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods get java.util.Map java.lang.Object
+            java.lang.Object
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getCount java.util.regex.Matcher</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getText java.net.URL</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods invokeMethod java.lang.Object
+            java.lang.String java.lang.Object
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods isNumber java.lang.String</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods leftShift java.util.Collection
+            java.lang.Object
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods minus java.lang.String java.lang.Object
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods newReader java.net.URL</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods println groovy.lang.Closure
+            java.lang.Object
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods size java.lang.Object[]</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods take java.lang.CharSequence int</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods toInteger java.lang.String</string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods use java.lang.Object java.lang.Class
+            groovy.lang.Closure
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.ScriptBytecodeAdapter compareGreaterThan java.lang.Object
+            java.lang.Object
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods leftShift java.io.OutputStream
+            java.lang.Object
+        </string>
+        <string>staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods leftShift java.io.OutputStream
+            java.io.InputStream
+        </string>
+        <string>staticMethod jenkins.model.Jenkins getInstance</string>
+        <string>staticMethod java.lang.Thread sleep long</string>
+        <string>staticMethod jenkins.model.Jenkins getInstance</string>
+        <string>staticMethod se.bjurr.gitchangelog.api.GitChangelogApi gitChangelogApiBuilder</string>
+        <string>method jenkins.model.Jenkins getCloud java.lang.String</string>
+        <string>method io.fabric8.kubernetes.client.KubernetesClient namespaces</string>
+        <string>method io.fabric8.kubernetes.client.Client adapt java.lang.Class</string>
+        <string>method io.fabric8.kubernetes.api.model.ObjectMeta getName</string>
+        <string>method io.fabric8.kubernetes.client.dsl.Createable createNew</string>
+        <string>method io.fabric8.kubernetes.api.model.ObjectMetaFluent withName java.lang.String</string>
+        <string>method io.fabric8.kubernetes.client.dsl.Editable edit</string>
+        <string>method io.fabric8.kubernetes.api.model.ObjectMetaFluent addToAnnotations java.lang.String
+            java.lang.String
+        </string>
+    </approvedSignatures>
+    <aclApprovedSignatures>
+    </aclApprovedSignatures>
+    <approvedClasspathEntries/>
+    <pendingScripts/>
+    <pendingSignatures/>
+    <pendingClasspathEntries/>
+</scriptApproval>
