@@ -1,9 +1,11 @@
+pipeline-model-extensions:latest
+apache-httpcomponents-client-4-api:latest
+jsch:latest
 ace-editor:latest
 ant:latest
 antisamy-markup-formatter:latest
 authentication-tokens:latest
 bouncycastle-api:latest
-branch-api:2.0.5
 build-timeout:latest
 credentials:latest
 credentials-binding:latest
@@ -31,7 +33,6 @@ mailer:latest
 mapdb-api:latest
 matrix-auth:latest
 matrix-project:latest
-mercurial:latest
 metrics:latest
 momentjs:latest
 oic-auth:latest
@@ -46,8 +47,6 @@ pipeline-milestone-step:latest
 pipeline-model-api:latest
 pipeline-model-declarative-agent:latest
 pipeline-model-definition:latest
-pipeline-githubnotify-step:latest
-pipeline-github-lib:latest
 pipeline-rest-api:latest
 pipeline-stage-step:latest
 pipeline-stage-tags-metadata:latest
