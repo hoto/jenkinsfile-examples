@@ -64,3 +64,10 @@ workflow-multibranch:latest
 workflow-scm-step:latest
 workflow-step-api:latest
 workflow-support:latest
+variant:latest
+authentication-tokens:latest
+branch-api:latest
+cloudbees-folder:latest
+bouncycastle-api:latest
+token-macro:latest
+pubsub-light:latest
