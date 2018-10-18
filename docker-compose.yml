@@ -20,8 +20,8 @@ services:
       DEBUG: 'false'
     volumes:
     - type: bind
-      source: ${PWD}/jenkinsfiles
-      target: /usr/local/src/jenkinsfiles
+      source: '${PWD}/jenkinsfiles'
+      target: '/usr/local/src/jenkinsfiles'
       read_only: true
     depends_on:
     - jenkins
