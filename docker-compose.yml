@@ -8,4 +8,22 @@ services:
     ports:
     - target: 8080
       published: 8080
+    networks:
+    - jenkins-network
     tty: true
+
+  jenkinsfile-loader:
+    image: docker.io/hoto/jenkinsfile-loader
+    environment:
+      JENKINS_URL: 'http://jenkins:8080'
+      JENKINSFILES_DIR: '/usr/local/src/jenkinsfile-examples'
+      DEBUG: 'true'
+    depends_on:
+    - jenkins
+    networks:
+      - jenkins-network
+    tty: true
+
+
+networks:
+  jenkins-network:
