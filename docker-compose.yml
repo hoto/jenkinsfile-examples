@@ -16,12 +16,17 @@ services:
     image: docker.io/hoto/jenkinsfile-loader
     environment:
       JENKINS_URL: 'http://jenkins:8080'
-      JENKINSFILES_DIR: '/usr/local/src/jenkinsfile-examples'
-      DEBUG: 'true'
+      JENKINSFILES_DIR: '/usr/local/src/jenkinsfiles'
+      DEBUG: 'false'
+    volumes:
+    - type: bind
+      source: ${PWD}/jenkinsfiles
+      target: /usr/local/src/jenkinsfiles
+      read_only: true
     depends_on:
     - jenkins
     networks:
-      - jenkins-network
+    - jenkins-network
     tty: true
 
 
