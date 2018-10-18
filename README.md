@@ -1,11 +1,11 @@
 [![](https://images.microbadger.com/badges/image/hoto/jenkinsfile-examples.svg)](https://microbadger.com/images/hoto/jenkinsfile-examples "Get your own image badge on microbadger.com")
-# Jenkins Examples
+# Jenkinsfiles Examples
 
-Library of working Jenkinsfiles which can be fiddled with in your favourite text editor and run in Jenkins..
+Library of working Jenkinsfiles which can be fiddled with in your favourite text editor and run in Jenkins.
 
 ### Why
 
-Jenkins documentations lacks in examples of Jenkinsfile pipeline features.
+(Jenkinsfile)[https://jenkins.io/doc/book/pipeline/jenkinsfile/] documentation lacks in examples when it comes to more advanced features.
 I needed working examples of various Jenkinsfiles which I could modify in my text editor and run them in Jenkins after saving the file.
 
 ### How it works
