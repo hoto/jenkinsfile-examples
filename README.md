@@ -56,6 +56,6 @@ If you just want to test plugins without committing them to git then stop at ste
         docker-compose up
 
 ### Components:
-  - [jenkins](https://hub.docker.com/_/jenkins/)
+  - [jenkins](https://hub.docker.com/_/jenkins/) - Customized with pre-installed plugins and disabled authentication.
   - [jenkinsfile-loader](https://github.com/hoto/jenkinsfile-loader) - Uses Jenkins API and creates jobs directly from Jenkinsfiles.
   
