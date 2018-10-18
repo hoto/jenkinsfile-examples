@@ -13,7 +13,7 @@ services:
     tty: true
 
   jenkinsfile-loader:
-    image: docker.io/hoto/jenkinsfile-loader
+    image: docker.io/hoto/jenkinsfile-loader:1.0.0
     environment:
       JENKINS_URL: 'http://jenkins:8080'
       JENKINSFILES_DIR: '/usr/local/src/jenkinsfiles'
