@@ -5,8 +5,10 @@ Library of working Jenkinsfiles which can be fiddled with in your favourite text
 
 ### Why
 
-(Jenkinsfile)[https://jenkins.io/doc/book/pipeline/jenkinsfile/] documentation lacks in examples when it comes to more advanced features.
-I needed working examples of various Jenkinsfiles which I could modify in my text editor and run them in Jenkins after saving the file.
+[Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) documentation lacks in examples when it comes to more advanced features.  
+I needed working examples of various Jenkinsfiles which I could then modify in my text editor and automatically convert them into Jenkins jobs.
+Unfortunately the best way to test a Jenkinsfile is to actually run it in Jenkins.  
+This project takes away the manual process of copying and pasting a Jenkinsfile into a Jenkins job, you still have to run the job manually.
 
 ### How it works
 
