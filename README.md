@@ -1,3 +1,4 @@
+[![](https://images.microbadger.com/badges/image/hoto/jenkinsfile-examples.svg)](https://microbadger.com/images/hoto/jenkinsfile-examples "Get your own image badge on microbadger.com")
 # Jenkins Examples
 
 Library of working Jenkinsfiles which can be fiddled with in your favourite text editor and run in Jenkins..
