@@ -15,6 +15,33 @@ pipeline {
           echo 'Stage 2'
         }
       }
+      post {
+        always {
+          script {
+            echo 'stage2.always'
+          }
+        }
+        success {
+          script {
+            echo 'stage2.success'
+          }
+        }
+        changed {
+          script {
+            echo 'stage2.changed'
+          }
+        }
+        aborted {
+          script {
+            echo 'stage2.aborted'
+          }
+        }
+        failure {
+          script {
+            echo 'stage2.failure'
+          }
+        }
+      }
     }
 
   }
