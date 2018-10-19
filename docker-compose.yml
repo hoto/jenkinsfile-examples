@@ -29,6 +29,5 @@ services:
     - jenkins-network
     tty: true
 
-
 networks:
   jenkins-network:
