@@ -8,20 +8,43 @@ jsl = library(
   )
 )
 
-
 def build = jsl.com.mycompany.jenkins.Build.new(this)
 
 pipeline {
   agent any
   stages {
 
-    stage('Stage 1') {
+    stage('Init') {
       steps {
         script {
           build.setBuildDescription(
-            title: 'Build title.',
-            description: 'Build description.'
+            title: "#${env.BUILD_NUMBER} My build title.",
+            description: 'My build description.'
           )
+        }
+      }
+    }
+
+    stage('Build') {
+      steps {
+        script {
+          echo 'Building...'
+        }
+      }
+    }
+
+    stage('Unit Test') {
+      steps {
+        script {
+          echo 'Unit Testing...'
+        }
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        script {
+          echo 'Deploying...'
         }
       }
     }

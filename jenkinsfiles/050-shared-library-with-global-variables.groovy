@@ -9,12 +9,13 @@ jsl = library(
 )
 
 simplePipeline([jsl: jsl])
-  .build([
+  .build(
     command: 'My build command'
-  ])
-  .unitTest([
+  )
+  .unitTest(
     command: 'My unit test command'
-  ])
-  .deploy([
+  )
+  .deploy(
     command: 'My deploy command'
-  ])
+  )
+

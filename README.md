@@ -36,9 +36,15 @@ To remove all containers with all of its data run:
 
     docker-compoes down
 
-### Install and update Jenkins plugins
+### Update Jenkins
 
-If you just want to test plugins without committing them to git then stop at step 2.
+1. Update jenkins version in `Dockerfile`
+2. Rebuild docker image and start a new jenkins container.
+3. Manually update jenkins plugins using the `Install or update Jenkins plugins` guide.
+
+### Install or update Jenkins plugins
+
+If you just want to test new plugins without committing them to git then stop at step 2.
 
 1. Start jenkins container.
 2. Manually install or update plugins through the UI.
@@ -49,12 +55,12 @@ If you just want to test plugins without committing them to git then stop at ste
           | jq -r '.plugins[] | "\(.shortName):\(.version)"' \
           | sort
     
-5. Rebuild docker image and start new containers to verify new plugins have been installed:
+5. Rebuild docker image and start a new containers to verify new plugins have been installed:
 
         docker-compose build
         docker-compose down
         docker-compose up
-
+        
 ### Components:
   - [jenkins](https://hub.docker.com/_/jenkins/) - Customized with pre-installed plugins and disabled authentication.
   - [jenkinsfile-loader](https://github.com/hoto/jenkinsfile-loader) - Uses Jenkins API and creates jobs directly from Jenkinsfiles.
