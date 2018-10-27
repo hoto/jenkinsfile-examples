@@ -1,50 +1,44 @@
 pipeline {
   agent any
   stages {
+
     stage('Stage 1') {
       steps {
         script {
           echo 'Stage 1'
         }
       }
-    }
-    stage('Stage 2') {
-      agent any
-      steps {
-        script {
-          echo 'Stage 2'
-        }
-      }
       post {
         always {
           script {
-            echo 'stage2.always'
+            echo 'stage1.always'
           }
         }
         success {
           script {
-            echo 'stage2.success'
+            echo 'stage1.success'
           }
         }
         changed {
           script {
-            echo 'stage2.changed'
+            echo 'stage1.changed'
           }
         }
         aborted {
           script {
-            echo 'stage2.aborted'
+            echo 'stage1.aborted'
           }
         }
         failure {
           script {
-            echo 'stage2.failure'
+            echo 'stage1.failure'
           }
         }
       }
     }
 
   }
+
   post {
     always {
       script {
@@ -72,4 +66,5 @@ pipeline {
       }
     }
   }
+
 }

@@ -4,14 +4,13 @@ pipeline {
   stages {
 
     stage('Stage 1') {
-      options {
-        timeout(time: 1, unit: 'MINUTES')
-      }
       steps {
-        waitUntil {
-          script {
-            echo 'This stage will succeed immediately without waiting for a minute.'
-            return true
+        timeout(1) {
+          waitUntil {
+            script {
+              echo 'This stage will succeed immediately without waiting for a minute.'
+              return true
+            }
           }
         }
       }
@@ -19,9 +18,10 @@ pipeline {
 
     stage('Stage 2') {
       steps {
-        timeout(time: 1, unit: 'MINUTES') {
+        timeout(1) {
           waitUntil {
             script {
+              echo 'This stage should succeed immediately if google.com is up, otherwise jenkins will retry until 1min runs out.'
               echo 'Checking if google.com is up...'
               def status = sh script: 'wget -q https://google.com -O /dev/null', returnStatus: true
               return (status == 0)
@@ -32,14 +32,13 @@ pipeline {
     }
 
     stage('Stage 3') {
-      options {
-        timeout(time: 1, unit: 'MINUTES')
-      }
       steps {
-        waitUntil {
-          script {
-            echo 'This stage will execute again and again until timeout is reached then the stage will fail.'
-            return false
+        timeout(1) {
+          waitUntil {
+            script {
+              echo 'This stage will be executed again and again until 1min is reached and then the stage will be marked as failure.'
+              return false
+            }
           }
         }
       }

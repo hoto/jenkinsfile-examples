@@ -1,5 +1,5 @@
-jenkinsSharedLibrary = library(
-  identifier: 'jenkins-shared-library@1.0.1',
+jsl = library(
+  identifier: 'jenkins-shared-library@1.0.4',
   retriever: modernSCM(
     [
       $class: 'GitSCMSource',
@@ -9,12 +9,12 @@ jenkinsSharedLibrary = library(
 )
 
 
-def sharedLibraryPackage = jenkinsSharedLibrary.com.mycompany.jenkins
-def build = sharedLibraryPackage.Build.new(this)
+def build = jsl.com.mycompany.jenkins.Build.new(this)
 
 pipeline {
   agent any
   stages {
+
     stage('Stage 1') {
       steps {
         script {
@@ -25,5 +25,6 @@ pipeline {
         }
       }
     }
+
   }
 }
