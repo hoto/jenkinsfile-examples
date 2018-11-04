@@ -15,12 +15,7 @@ pipeline {
     stage('Where is Jenkins Shared Library cloned') {
       steps {
         script {
-          sh 'pwd'
-          sh 'ls -la'
-          sh 'ls -la ../'
-          sh 'ls -la ../050-shared-library-where-is-it-cloned@libs'
           sh 'ls -la ../050-shared-library-where-is-it-cloned@libs/jenkins-shared-library'
-          sh 'cd ../050-shared-library-where-is-it-cloned@libs/jenkins-shared-library && git remote -v'
         }
       }
     }
