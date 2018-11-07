@@ -8,6 +8,11 @@ services:
     ports:
     - target: 8080
       published: 8080
+    volumes:
+    - type: bind
+      source: '/var/run/docker.sock'
+      target: '/var/run/docker.sock'
+      read_only: true
     networks:
     - jenkins-network
     tty: true

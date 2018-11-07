@@ -23,7 +23,9 @@ This will pull and start latest docker images
 
     docker-compose pull
     docker-compose up
-    
+   
+If you have problem with mounting `/var/run/docker.sock` then remove it from `docker-compose.yml` but you won't be able to run jobs which use docker as an agent.
+
 Wait for Jenkins to boot up. Authentication is disabled. Open a browser and go to:
 
     localhost:8080
