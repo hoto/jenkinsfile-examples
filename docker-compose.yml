@@ -18,12 +18,17 @@ services:
     tty: true
 
   jenkinsfile-loader:
-    image: docker.io/hoto/jenkinsfile-loader:1.0.0
+    image: docker.io/hoto/jenkinsfile-loader:1.1.0
     environment:
       JENKINS_URL: 'http://jenkins:8080'
+      CONFIGS_XML_DIR: '/usr/local/src/configs'
       JENKINSFILES_DIR: '/usr/local/src/jenkinsfiles'
       DEBUG: 'false'
     volumes:
+    - type: bind
+      source: '${PWD}/configs'
+      target: '/usr/local/src/configs'
+      read_only: true
     - type: bind
       source: '${PWD}/jenkinsfiles'
       target: '/usr/local/src/jenkinsfiles'
