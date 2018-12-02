@@ -1,4 +1,4 @@
-jsl = library(
+library(
   identifier: 'jenkins-shared-library@1.0.4',
   retriever: modernSCM(
     [
