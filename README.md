@@ -1,14 +1,16 @@
 [![](https://images.microbadger.com/badges/image/hoto/jenkinsfile-examples.svg)](https://microbadger.com/images/hoto/jenkinsfile-examples "Get your own image badge on microbadger.com")
 # Jenkinsfiles Examples
 
-Library of working Jenkinsfiles which can be fiddled with in your favourite text editor and run in Jenkins.
+Collection of executable Jenkinsfiles loaded automatically into a dockerized Jenkins.
+Useful for experimenting or demos.
 
 ### Why
 
 [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) documentation lacks in examples when it comes to more advanced features.  
-I needed working examples of various Jenkinsfiles which I could then modify in my text editor and automatically convert them into Jenkins jobs.
-Unfortunately the best way to test a Jenkinsfile is to actually run it in Jenkins.  
-This project takes away the manual process of copying and pasting a Jenkinsfile into a Jenkins job, you still have to run the job manually.
+I needed working examples of various Jenkinsfiles which I could then modify in my local text editor and automatically convert them into Jenkins jobs.
+Unfortunately the best way to test a Jenkinsfile is to run it in a Jenkins instance.  
+This project takes away the manual process of copying and pasting a Jenkinsfile into a Jenkins job configuration.
+By design job has to be run manually.
 
 ### How it works
 
