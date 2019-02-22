@@ -14,7 +14,7 @@ By design job has to be run manually.
 
 ### How it works
 
-[jenkinsfile-loader](https://github.com/hoto/jenkinsfile-loader) uses Jenkins REST API to create Jenkins jobs directly from Jenkinsfiles located in `jenkinsfiles` directory.
+[jenkinsfile-loader](https://github.com/hoto/jenkinsfile-loader) container uses Jenkins REST API to create Jenkins jobs directly from Jenkinsfiles located in `jenkinsfiles` directory.
 It also monitors any change in that folder and will update, create or remove jobs accordingly.  
 All files must be named `<job_name>.groovy` where `<job_name>` will be used for the Jenkins job name.
 There is no auto-refresh, so after adding or removing files Jenkins page needs to be refreshed manually to reflect changes.
@@ -52,7 +52,11 @@ To remove all containers with all of its data run:
 
     docker-compoes down
 
-### Update Jenkins
+---
+
+### Updating Jenkins
+
+If you wish to update jenkins for some reason then:
 
 1. Update jenkins version in `Dockerfile`
 2. Rebuild docker image and start a new jenkins container.
