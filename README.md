@@ -19,6 +19,10 @@ It also monitors any change in that folder and will update, create or remove job
 All files must be named `<job_name>.groovy` where `<job_name>` will be used for the Jenkins job name.
 There is no auto-refresh, so after adding or removing files Jenkins page needs to be refreshed manually to reflect changes.
 
+### Blogs using this repository:
+
+* [Private Jenkins Shared Libraries](https://medium.com/@AndrzejRehmann/private-jenkins-shared-libraries-540abe7a0ab7)
+
 ### Run
 
 This will pull and start latest docker images
