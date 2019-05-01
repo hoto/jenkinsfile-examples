@@ -21,6 +21,7 @@ There is no auto-refresh, so after adding or removing files Jenkins page needs t
 
 ### Blogs using this repository:
 
+* [Creating a Jenkinsfile pipeline](https://medium.com/@AndrzejRehmann/creating-a-jenkinsfile-pipeline-7aefc89b8c67)
 * [Private Jenkins Shared Libraries](https://medium.com/@AndrzejRehmann/private-jenkins-shared-libraries-540abe7a0ab7)
 
 ### Run
