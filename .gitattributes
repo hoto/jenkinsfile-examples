@@ -5,3 +5,4 @@
 *.jar binary
 *.zip binary
 
+*.util.Secret binary
