@@ -4,6 +4,8 @@
 Collection of executable Jenkinsfiles loaded automatically into a dockerized Jenkins.
 Useful for experimenting or demos.
 
+![](./.images/001.png)
+
 ### Why
 
 [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) documentation lacks in examples when it comes to more advanced features.  
